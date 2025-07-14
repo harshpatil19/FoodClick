@@ -18,7 +18,7 @@ export default function Footer() {
               
             </svg>{" "}
           </Link>{" "}
-          <span className="mb-3 mb-md-0 text-body-secondary">
+          <span className="mb-3 mb-md-0 text-white">
             © 2025 FoodClick, Inc
           </span>{" "}
         </div>{" "}

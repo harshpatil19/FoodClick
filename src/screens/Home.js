@@ -8,16 +8,16 @@ export default function Home() {
   return (
     <div>
       <div>
-        <Navbar />
+        <Navbar/>
       </div>
       <div>
         <Carousal />
       </div>
-      <div>
+      <div className="m-3">
         <Card />
       </div>
       <div>
-        <Footer />
+        <Footer/>
       </div>
     </div>
   );

@@ -1,28 +1,23 @@
-
-
 import './App.css';
 import Home from './screens/Home';
-import { BrowserRouter,
-  Routes,
-  Route,
-} from "react-router";
+import { BrowserRouter, Routes, Route } from "react-router";
 import Login from './screens/Login';
 
+// Bootstrap dark theme CSS (good 👍)
+import '../node_modules/bootstrap-dark-5/dist/css/bootstrap-dark.min.css';
+
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function App() {
   return (
     <BrowserRouter>
-    <div>
-      <Routes>
-      <Route exact path="/" element={<Home/>}> </Route>
-      <Route exact path="/login" element={<Login/>}></Route>
-      </Routes>
-
-    </div>
-    
-    
+      <div>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/login" element={<Login />} />
+        </Routes>
+      </div>
     </BrowserRouter>
-    
   );
 }
 

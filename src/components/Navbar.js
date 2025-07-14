@@ -1,19 +1,18 @@
 import React from 'react';
-import logo from '../images/NavbarLogo.png';  
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-success">
         <Link className="navbar-brand fs-3 fst-italic" to="/">
-          <img src={logo} width="30" height="30" alt="Logo" /> FoodClick
+          <img src="/images/NavbarLogo.png" width="30" height="30" alt="Logo" /> FoodClick
         </Link>
         <button
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="/navbarNav"
+          data-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -30,8 +29,6 @@ export default function Navbar() {
             <li className="nav-item">
               <Link className="nav-link" to="/login">Login</Link>
             </li>
-         
-           
           </ul>
         </div>
       </nav>
