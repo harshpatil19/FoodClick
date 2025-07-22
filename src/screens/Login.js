@@ -47,7 +47,10 @@ export default function Login() {
         alert("Enter Valid Credentials");
       }
        // is success then it will navigate to home page
+       //also it will set an authToken and it will generate a new token inside browser console
       if(json.success){
+        localStorage.setItem("authToken",json.authToken)
+        console.log(localStorage.getItem("authToken"))
         navigate("/")
       }
     } catch (error) {
