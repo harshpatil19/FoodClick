@@ -24,6 +24,7 @@ app.use((req,res,next)=>{
 
 
 app.use('/api',require("./Routes/CreateUser"))
+app.use('/api',require("./Routes/DisplayData"))
 app.use('/api',require("./Routes/LoginUser"))
 
 app.listen(port, () => {
